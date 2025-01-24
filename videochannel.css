@@ -1,0 +1,221 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #003366; /* Team color */
+}
+
+#logo-container {
+    flex: 1;
+}
+
+#logo {
+    max-width: 150px; /* Adjust logo size */
+}
+
+#main-nav {
+    flex: 3;
+}
+
+#main-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#main-nav ul li {
+    margin: 0 15px;
+}
+
+#main-nav ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff; /* White color for navigation links */
+}
+
+#main-nav ul li a:hover {
+    color: #ff6600; /* Accent color on hover */
+}
+
+/* Video Channel Page */
+#video-channel-page {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#page-header {
+    margin-bottom: 50px;
+}
+
+#page-header h1 {
+    font-size: 42px;
+    color: #003366;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#page-header p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Categories Section */
+#video-categories {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.category {
+    background-color: #003366;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.category:hover {
+    background-color: #ff6600;
+    transform: scale(1.1);
+}
+
+.category.active {
+    background-color: #ff6600;
+}
+
+/* Video Thumbnails Grid */
+#video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.video-thumbnail {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+}
+
+.video-thumbnail:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video-thumbnail img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.video-info {
+    margin-top: 15px;
+}
+
+.video-info h3 {
+    font-size: 20px;
+    color: #003366;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.video-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.play-btn {
+    background-color: #003366;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.play-btn:hover {
+    background-color: #ff6600;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#social-media {
+    margin-top: 10px;
+}
+
+#social-media a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+#social-media a:hover {
+    color: #ff6600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #page-header h1 {
+        font-size: 32px;
+    }
+
+    #page-header p {
+        font-size: 16px;
+    }
+
+    #video-categories {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .category {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    #video-grid {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+}

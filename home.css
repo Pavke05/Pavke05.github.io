@@ -1,0 +1,246 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Body font */
+    line-height: 1.6;
+    color: #333; /* Default text color */
+    background-color: #f8f8f8; /* Light background for better readability */
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif; /* Heading font for boldness */
+    color: #003366; /* Team color for headings */
+}
+
+a {
+    text-decoration: none;
+    color: #003366; /* Link color */
+}
+
+a:hover {
+    color: #ff6600; /* Accent color on hover */
+}
+
+/* Header */
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #003366; /* Team color */
+}
+
+#logo-container {
+    flex: 1;
+}
+
+#logo {
+    max-width: 150px; /* Adjust logo size */
+}
+
+#main-nav {
+    flex: 3;
+}
+
+#main-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#main-nav ul li {
+    margin: 0 15px;
+}
+
+#main-nav ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff; /* White color for navigation links */
+}
+
+#main-nav ul li a:hover {
+    color: #ff6600; /* Accent color on hover */
+}
+
+/* Main Content */
+#main-content {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
+}
+
+#main-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #003366; /* Team color */
+    margin-bottom: 20px;
+}
+
+#main-content p {
+    font-size: 20px; /* Increased font size */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #666;
+    line-height: 1.8; /* Improved readability */
+    max-width: 800px; /* Max width to avoid too long lines */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#club-image {
+    width: 60%; /* Adjust the image size */
+    height: auto;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+}
+
+#mission-statement {
+    font-size: 22px; /* Slightly larger font for mission statement */
+    font-style: italic;
+    margin-top: 30px;
+    color: #333;
+    max-width: 900px; /* Max width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6; /* Improved spacing for readability */
+}
+
+/* Sponsors Section */
+#Sponsorstitle {     
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 200px;
+    font-size: 36px;
+    font-weight: bold; 
+    color: #003366;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#sponsors {
+    display: flex;
+    justify-content: space-around; /* Distribute logos evenly */
+    align-items: center;
+    margin-top: 40px; /* Add space above sponsors */
+    margin-bottom: 40px; /* Space below sponsors */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+#sponsors img {
+    max-width: 180px; /* Limit size of the logos */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px; /* Space around each logo */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling on hover */
+    object-fit: contain; /* Ensures logos don't get distorted */
+}
+
+#sponsors img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #sponsors {
+        justify-content: center; /* Center logos on smaller screens */
+    }
+
+    #sponsors img {
+        max-width: 150px; /* Make logos slightly smaller on mobile */
+        margin: 10px; /* Reduce space around logos on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    #sponsors img {
+        max-width: 120px; /* Even smaller logos on very small screens */
+        margin: 5px; /* Further reduce space */
+    }
+}
+
+/* Footer */
+#main-footer {
+    background-color: #003366; /* Team color */
+    color: #ffffff; /* White text */
+    padding: 30px 20px;
+    text-align: center;
+}
+
+#footer-links a {
+    margin: 0 15px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#footer-links a:hover {
+    color: #ff6600; /* Accent color on hover */
+}
+
+#social-media {
+    margin-top: 15px;
+}
+
+#social-media a {
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#social-media a:hover {
+    color: #ff6600; /* Accent color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #main-header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    #main-nav ul li {
+        margin: 10px 0;
+    }
+
+    #main-content h1 {
+        font-size: 28px;
+    }
+
+    #club-image {
+        width: 90%;
+    }
+
+    #footer-links a, #social-media a {
+        font-size: 14px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    #main-header {
+        padding: 15px;
+    }
+
+    #main-content h1 {
+        font-size: 24px;
+    }
+
+    #club-image {
+        width: 100%;
+    }
+}
