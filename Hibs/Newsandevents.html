@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="news.css">
+    <title>News - Hibernians Basketball Club</title>
+    <link rel="icon" href="Images/hibslogo.png" type="image/x-icon">
+</head>
+<body>
+<header id="main-header">
+    <div id="logo-container">
+        <img src="Images/hibslogo.png" alt="Hibernians Basketball Club Logo" id="logo">
+    </div>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="Newsandevents.html">News</a></li>
+            <li><a href="Fixtures.html">Fixtures</a></li>
+            <li><a href="Commitee.html">Commitee</a></li>
+            <li><a href="Contactus.html">Contact Us</a></li>
+            <li><a href="VideoChanell.html">Video Channel</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="news-page">
+    <!-- News Search Section -->
+    <section id="news-search">
+        <input type="text" id="search-bar" placeholder="Search News...">
+        <button id="search-button">Search</button>
+    </section>
+
+    <!-- Featured News Slider -->
+    <section id="featured-news">
+        <div class="slider">
+            <div class="slide">
+                <img src="images/featured1.jpg" alt="Featured Match">
+                <h2>Hibernians Dominate the Court</h2>
+                <p>Our team delivered a stunning performance in last night's game...</p>
+                <a href="featured1.html">Read More</a>
+            </div>
+            <div class="slide">
+                <img src="images/featured2.jpg" alt="Tournament Update">
+                <h2>Tournament Updates: Semi-Finals Coming Up</h2>
+                <p>Stay tuned for an exciting semi-final clash next week...</p>
+                <a href="featured2.html">Read More</a>
+            </div>
+            <!-- Add more slides if needed -->
+        </div>
+    </section>
+
+    <!-- News Articles Section -->
+    <section id="news-articles">
+        <article class="news-item">
+            <img src="images/match-result.jpg" alt="Match Result">
+            <div class="news-content">
+                <h2>Match Result: Hibernians vs. Rivals</h2>
+                <p class="news-date">November 15, 2024</p>
+                <p class="news-summary">An exciting match between Hibernians and their rivals ended in a close victory for Hibernians with a score of 78-74.</p>
+                <a href="match-result.html" class="read-more">Read More</a>
+            </div>
+        </article>
+        <!-- More news items -->
+    </section>
+
+    <!-- Pagination -->
+    <nav id="pagination">
+        <button class="load-more">Load More</button>
+    </nav>
+</main>
+
+<footer>
+    <div id="footer-links">
+        <p>&copy; 2024 Hibernians Basketball Club</p>
+    </div>
+    <div id="social-media">
+        <a href="https://www.facebook.com/ourpassion" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/hibernians_basketball/" target="_blank">Instagram</a>
+    </div>
+</footer>
+<script src="news.js"></script>
+</body>
+</html>
